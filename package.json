@@ -94,7 +94,8 @@
     "build:demo": "tsc --project tsconfig.demo.json && parcel build demo/index.html --no-cache --public-url \"./\" && SC=cpGHPages npm run script",
     "build:docs": "typedoc --plugin typedoc-plugin-markdown --hideBreadcrumbs --readme none --disableSources --excludePrivate --excludeProtected --githubPages false --out docs/ src/index.ts",
     "test": "TS_NODE_PROJECT=test/tsconfig.json uvu -b -r ts-node/register test",
-    "prepack": "npm run build && npm run test"
+    "prepack": "npm run build && npm run test",
+    "test2": "vitest"
   },
   "devDependencies": {
     "@parcel/service-worker": "^2.9.3",
@@ -116,7 +117,9 @@
     "typedoc-plugin-markdown": "^3.16.0",
     "typescript": "^5.2.2",
     "uvu": "^0.3.3",
-    "uzip": "*"
+    "uzip": "*",
+    "vitest": "^4.1.5",
+    "zlib": "^1.0.5"
   },
   "alias": {
     "react": "preact/compat",
