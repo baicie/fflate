@@ -28,9 +28,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build library
-        run: pnpm run build2
-
       - name: Run benchmark
         run: pnpm run bench > /tmp/bench-raw.txt 2>&1 || true; node scripts/benchReport.mjs /tmp/bench-raw.txt
 
