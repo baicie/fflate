@@ -11,3 +11,4 @@ umd/
 # for demo
 .parcel-cache
 dist/
+bench-results
